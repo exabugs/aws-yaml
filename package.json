@@ -1,0 +1,24 @@
+{
+  "name": "yaml",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "js-yaml": "^3.13.1",
+    "lodash": "^4.17.15",
+    "node-cidr": "^1.0.0",
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.30.0",
+    "@types/jest": "^25.2.1",
+    "jest": "^25.5.4",
+    "typescript": "^3.8.3",
+    "ts-jest": "^25.4.0"
+  }
+}
