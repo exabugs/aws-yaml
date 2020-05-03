@@ -4,6 +4,8 @@
 
 Parse AWS Yaml into json
 
+https://docs.aws.amazon.com/ja_jp/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html
+
 ## How To Install
 
 ```
@@ -24,27 +26,27 @@ const { Resources } = json;
 
 ## Available Tags
 
-| Tag           |     |
-| ------------- | --- |
-| Ref           |     |
-| Fn::Join      |     |
-| Fn::Select    |     |
-| Fn::Split     |     |
-| Fn::GetAtt    |     |
-| Fn::Sub       |     |
-| Fn::FindInMap |     |
-| Fn::GetAZs    |     |
-| Fn::If        |     |
-| Fn::Equals    |     |
-| Fn::And       |     |
-| Fn::Or        |     |
-| Fn::Not       |     |
-| Fn::Base64    |     |
-| Fn::Cidr      |     |
+| full          | short      |
+| ------------- | ---------- |
+| Ref           | !Ref       |
+| Fn::Join      | !Join      |
+| Fn::Select    | !Select    |
+| Fn::Split     | !Split     |
+| Fn::GetAtt    | !GetAtt    |
+| Fn::Sub       | !Sub       |
+| Fn::FindInMap | !FindInMap |
+| Fn::GetAZs    | !GetAZs    |
+| Fn::If        | !If        |
+| Fn::Equals    | !Equals    |
+| Fn::And       | !And       |
+| Fn::Or        | !Or        |
+| Fn::Not       | !Not       |
+| Fn::Base64    | !Base64    |
+| Fn::Cidr      | !Cidr      |
 
 ## Unavailable Tags
 
-| Tag             |     |
-| --------------- | --- |
-| Fn::ImportValue |     |
-| Fn::Transform   |     |
+| full            | short        |
+| --------------- | ------------ |
+| Fn::ImportValue | !ImportValue |
+| Fn::Transform   | !Transform   |
