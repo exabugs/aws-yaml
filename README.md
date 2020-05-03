@@ -4,6 +4,12 @@
 
 Parse AWS Yaml into json
 
+## How To Install
+
+```
+yarn add aws-yaml
+```
+
 ## How To Use
 
 ```
