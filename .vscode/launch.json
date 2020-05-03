@@ -5,25 +5,10 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Launch Program",
       "type": "node",
       "request": "launch",
-      "name": "Launch Program",
       "program": "${file}"
-    },
-    {
-      // https://pawelgrzybek.com/attach-visual-studio-code-debugger-to-sam-serverless-application-model-local-endpoint/
-      "name": "Attach to SAM CLI",
-      "type": "node",
-      "request": "attach",
-      "address": "127.0.0.1",
-      "port": 5858,
-      // From the sam init example, it would be "${workspaceRoot}/hello-world"
-      // "localRoot": "${workspaceRoot}/{directory of node app}",
-      // "localRoot": "${workspaceRoot}/hello-world",
-      "localRoot": "${workspaceFolder}",
-      "remoteRoot": "/var/task",
-      "protocol": "inspector",
-      "stopOnEntry": false
     },
     {
       "name": "Debug Jest Tests",

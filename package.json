@@ -2,9 +2,11 @@
   "name": "yaml",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "jest"
+    "build": "tsc",
+    "pretest": "tsc",
+    "test": "jest --coverage"
   },
   "keywords": [],
   "author": "",
@@ -12,13 +14,16 @@
   "dependencies": {
     "js-yaml": "^3.13.1",
     "lodash": "^4.17.15",
-    "node-cidr": "^1.0.0",
+    "node-cidr": "^1.0.0"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.30.0",
     "@types/jest": "^25.2.1",
+    "@types/js-yaml": "^3.12.3",
+    "@types/lodash": "^4.14.150",
+    "@typescript-eslint/eslint-plugin": "^2.30.0",
     "jest": "^25.5.4",
-    "typescript": "^3.8.3",
-    "ts-jest": "^25.4.0"
+    "jest-junit": "^10.0.0",
+    "ts-jest": "^25.4.0",
+    "typescript": "^3.8.3"
   }
 }

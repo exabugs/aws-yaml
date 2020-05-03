@@ -19,6 +19,6 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "plugins": ["node", "react"],
+  "plugins": ["node"],
   "rules": {}
 }

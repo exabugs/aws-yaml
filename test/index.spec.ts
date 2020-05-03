@@ -1,5 +1,5 @@
-const yaml = require('./index');
-const _ = require('lodash');
+import _ from 'lodash';
+import yaml from '../src/index';
 
 test('Ref', () => {
   const buff = [
@@ -316,7 +316,7 @@ test('Base64', () => {
     '  !Base64 HelloWorld2',
   ].join('\n');
   const result = yaml.load(buff);
-  const base64 = (str) => Buffer.from(str).toString('base64');
+  const base64 = (str: string) => Buffer.from(str).toString('base64');
   const ans = {
     URL0: base64('HelloWorld1'),
     URL1: base64('HelloWorld2'),
