@@ -347,3 +347,18 @@ test('Cidr', () => {
   };
   expect(result).toEqual(ans);
 });
+
+test('ImportValue', () => {
+  const buff = [
+    'URL0:',
+    '  Fn::ImportValue: "hogehoge"',
+    'URL1:',
+    '  !ImportValue hogehoge',
+  ].join('\n');
+  const result = yaml.load(buff);
+  const ans = {
+    URL0: 'hogehoge',
+    URL1: 'hogehoge',
+  };
+  expect(result).toEqual(ans);
+});

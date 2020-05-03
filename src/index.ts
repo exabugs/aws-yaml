@@ -80,6 +80,11 @@ const funcs = (params: any) => ({
     sequence: (data: [string, number, number]) =>
       cidr.subnets(data[0], 32 - data[2], data[1]),
   },
+  // Not Implemented
+  'Fn::ImportValue': {
+    type: '!ImportValue',
+    scalar: (data: string) => data,
+  },
 });
 
 const types = (funcs: any) =>
