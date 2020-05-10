@@ -34,8 +34,8 @@ const funcs = (params: any) => ({
   },
   'Fn::GetAtt': {
     type: '!GetAtt',
-    sequence: (data: string[]) => _.at(params, data.join('.'))[0],
-    scalar: (data: string) => _.at(params, data)[0],
+    sequence: (data: string[]) => _.get(params, data.join('.')),
+    scalar: (data: string) => _.get(params, data),
   },
   'Fn::Sub': {
     type: '!Sub',
@@ -45,7 +45,7 @@ const funcs = (params: any) => ({
   },
   'Fn::FindInMap': {
     type: '!FindInMap',
-    sequence: (data: any[]) => _.at(params, data.join('.'))[0],
+    sequence: (data: any[]) => _.get(params, data.join('.')),
   },
   'Fn::GetAZs': {
     type: '!GetAZs',
